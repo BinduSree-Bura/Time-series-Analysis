@@ -37,21 +37,16 @@ The dataset used for the analysis contains information about the total electrici
 Empirical methods involve using statistical techniques to analyze data and understand the relationships between variables. This approach typically involves collecting data and applying statistical methods such as regression analysis and time series analysis to uncover patterns and insights. We are using empirical methods to identify the internal and external factors influencing demand.
 
 Linear Regression Analysis
-
 We had performed linear regression to find the relationship between the dependent variable which is our target Electricity demand variable(PJME_MW) and the independent variables(time)   based on the different time periods on the data set during different time periods.
-
 The estimating equation for the Linear regression can be written as:
- 
-Where, PJME_MW is the dependent variable representing total electric demand in megawatts. Hour is the independent variable representing the Hour, DayOfYear, WeekOfYear, Quarter, Month, year, previous hour consumption at which the demand was made. Time here represents the time in months from the start of the dataset. β0, β1, and β2 are the coefficients to be estimated by the OLS method
+ Where, PJME_MW is the dependent variable representing total electric demand in megawatts. Hour is the independent variable representing the Hour, DayOfYear, WeekOfYear, Quarter, Month, year, previous hour consumption at which the demand was made. Time here represents the time in months from the start of the dataset. β0, β1, and β2 are the coefficients to be estimated by the OLS method
 In addition to the estimating equation, we can also perform statistical tests to determine the significance of the independent variables in explaining the variation in the dependent variable.
 
 Ordinary Least Square
 OLS is a method used to estimate the coefficients in our regression model. It ensures the best fit by minimizing the sum of the squares of the differences between the observed and predicted values and the above is the empirical equation for the OLS regression.
 
 6	RESULTS
-Below are the out comes of the empirical methods:.
- 
-The image shows the results of fitting a regression model to the data. A lagged version of the 'PJME_MW' column is created and used as a predictor in an Ordinary Least Squares (OLS) regression model to predict the current 'PJME_MW' values.
+ The image shows the results of fitting a regression model to the data. A lagged version of the 'PJME_MW' column is created and used as a predictor in an Ordinary Least Squares (OLS) regression model to predict the current 'PJME_MW' values.
 The model summary indicates a very high R-squared value of 0.941, which means that the model explains a large proportion of the variability in the data. The coefficients for the lagged consumption variable are statistically significant, as indicated by a p-value near zero.
 A plot is shown comparing the original 'PJME_MW' values and the fitted values from the model, represented in red. The fitted values closely follow the original, indicating a good model fit.
  	Yearly Energy Consumption: A line chart illustrating the trend in yearly mean energy consumption, indicating an overall increase with some fluctuations.""Seasonal Decomposition: Visual representation of the original data broken down into trend, seasonality, and residuals to understand underlying patterns."
